@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cmake -B build -DCMAKE_BUILD_TYPE=Debug)",
+      "Bash(pacman -Q cmake)",
+      "Bash(apt list *)",
+      "Read(//usr/**)",
+      "Bash(pacman -Qi cmake)",
+      "Bash(sudo pacman -S --noconfirm cmake)",
+      "Bash(g++ --version)",
+      "Bash(c++ --version)",
+      "Bash(g++ -std=c++20 -Wall -Wextra -Wpedantic -fsyntax-only src/common/Buffer.h src/common/Checksum.h src/common/Endian.h)",
+      "Bash(cat)",
+      "Bash(g++ -std=c++20 -Wall -Wextra -Wpedantic -Werror -I. /tmp/test_compile.cpp -o /tmp/test_compile)",
+      "Bash(/tmp/test_compile)",
+      "Bash(pip install *)",
+      "Bash(cmake --version)",
+      "Bash(python3 -m pip install cmake --quiet)",
+      "Read(//tmp/gtest/**)",
+      "Bash(g++ -std=c++20 -O0 -I googletest/include -I googletest -I googlemock/include -I googlemock googletest/src/gtest-all.cc googlemock/src/gmock-all.cc googletest/src/gtest_main.cc /home/coder221/Desktop/coding/tcp-udp/tests/common/ChecksumTest.cpp /home/coder221/Desktop/coding/tcp-udp/tests/common/BufferTest.cpp -I /home/coder221/Desktop/coding/tcp-udp/src -o /tmp/run_tests)",
+      "Bash(/tmp/run_tests)",
+      "Bash(g++ -std=c++20 -O0 -Wall -Wextra -I googletest/include -I googletest -I googlemock/include -I googlemock googletest/src/gtest-all.cc googlemock/src/gmock-all.cc googletest/src/gtest_main.cc /home/coder221/Desktop/coding/tcp-udp/tests/common/ChecksumTest.cpp /home/coder221/Desktop/coding/tcp-udp/tests/common/BufferTest.cpp -I /home/coder221/Desktop/coding/tcp-udp/src -o /tmp/run_tests)",
+      "Bash(chmod +x /home/coder221/Desktop/coding/tcp-udp/scripts/tun_setup.sh /home/coder221/Desktop/coding/tcp-udp/scripts/tun_teardown.sh)"
+    ]
+  }
+}
