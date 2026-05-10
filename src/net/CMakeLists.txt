@@ -1,2 +1,2 @@
-add_library(net INTERFACE)
-target_link_libraries(net INTERFACE common)
+add_library(net STATIC Ipv4Layer.cpp IcmpLayer.cpp)
+target_link_libraries(net PUBLIC link common)
